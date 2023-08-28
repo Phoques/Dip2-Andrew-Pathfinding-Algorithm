@@ -13,6 +13,13 @@ public class Node : MonoBehaviour
     //I think this is going to store the node we have just moved from / have previously travelled on.
     private Node _previousNode;
 
+    //This is a getter and setter, but also a property.
+    public float PathWeight
+    {
+        get => _pathWeight;
+        set => _pathWeight = value;
+    }
+
     public Node PreviousNode
     {
         get { return _previousNode; }
